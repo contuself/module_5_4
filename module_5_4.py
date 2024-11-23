@@ -55,8 +55,7 @@ class House:
     def __iadd__(self, value):
         return self.__add__(value)
     def __del__(self):
-        House.houses_history.remove(self.name)
-        return f'{self.name} снесён, но он останется в истори'
+        print(f'{self.name} снесён, но он останется в истории')
 h1 = House('ЖК Эльбрус', 10)
 print(House.houses_history)
 
